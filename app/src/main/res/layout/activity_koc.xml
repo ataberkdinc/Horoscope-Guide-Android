@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ataberkdinc.burcrehberi.koc">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true"
+        >
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleTextAppearance="@android:color/transparent"
+            android:fitsSystemWindows="true"
+            >
+
+            <ImageView
+                app:layout_collapseMode="parallax"
+                android:src="@drawable/aries"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="350dp" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                android:title="KOC"
+                app:layout_collapseMode="pin"
+                />
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:padding="12dp"
+                    android:textSize="20sp"
+                    android:layout_marginTop="12dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryText"
+                    android:text="Koç Burcu Özellikleri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:padding="12dp"
+                    android:textSize="10sp"
+                    android:layout_marginTop="13dp"
+                    android:textColor="@color/colorPrimaryText"
+                    android:text="21 Mart - 20 Nisan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:padding="12dp"
+                    android:textSize="13sp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:maxLines="32"
+                    android:lines="32"
+                    android:layout_marginTop="12dp"
+                    android:text="Bir Koç'u tanımlamak o kadar kolay değildir. Keskin ve kararlı bakışlarıyla, hedeflediği konular üzerinde hakimiyet sağlar. O, hızlı gelişen tutkuların insanıdır. Ne yapacağı hiç belli olmaz. Yenilgi kelimesi ile onun adını birlikte söylemeniz nerdeyse imkansızdır.
+
+Realist ve idealisttir. Koç'un enerjisini düşünmek bile, bazılarını yorabilir. İstedikleri zaman, herkesten çok daha akıllı ve sakin olabilir. Çok hızlı düşünebilen yapılarıyla, onlara yetişmek neredeyse imkansızdır. Çocuk gibi saf ve gözü kara bir cengaverdir. Koç insanına karşı dürüst olmak zorundasınız. O, madalyonun öteki yüzünü bilmez ve ilişkilerinde aldatıcı değildir.
+
+Ona kalbinizin kapılarını sonuna kadar açın. İçeriye paldır küldür girse bile, kapıyı incitmeden kapatacaktır. Eğer; aradığı sevgili siz iseniz, sizi mutlu etmek adına aklınıza gelebilecek tüm çılgınlıkları sergileyecek ve bunları yaparken, özel şeyler yaptığının farkında olmayacaktır. Çünkü, birisinin kalbini kazanmak için, gösteri yapma yollarını seçmeyecek kadar içten ve samimidir. Başka türlüsünü bilemez zaten. Sakın onu yargılamayın, eleştirmeyin. Bırakın istediğini yapsın. Nasıl olsa kurgulanmış bir şey değildir ve sizin sert çıkışlarınızı asla anlamayacaktır.
+
+Gerçekten kırılırsa, en sevdiği oyuncağı elinden alınmışçasına size küser ve mızıkçılılık yapar. Bir çocuk kalbine sahiptir. Ona yapılacak en büyük hata, ihmal edilmesidir. Araya mesafe koyarsanız, ilgisini çekecek başka şeylere yönelir."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:src="@drawable/ic_action_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        app:layout_anchor="@id/app_bar_layout"
+        app:layout_anchorGravity="bottom|right|end"
+        />
+</android.support.design.widget.CoordinatorLayout>
